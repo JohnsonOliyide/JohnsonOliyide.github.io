@@ -2,11 +2,14 @@
 """Build the static website with the Python standard library."""
 from pathlib import Path
 import html
+import hashlib
 import json
 import shutil
 
 ROOT = Path(__file__).resolve().parent.parent
 PAPERS = json.loads((ROOT / 'content/research.json').read_text())
+CSS_VERSION = hashlib.sha256((ROOT / 'assets/site.css').read_bytes()).hexdigest()[:10]
+JS_VERSION = hashlib.sha256((ROOT / 'assets/site.js').read_bytes()).hexdigest()[:10]
 escape = html.escape
 EMAIL = 'oliyide.ayobamij@gmail.com'
 SOCIAL = [
@@ -35,12 +38,12 @@ def page(title, slug, content, description):
 <title>{escape(title)} | Johnson Oliyide</title>
 <meta name="description" content="{escape(description, quote=True)}">
 <link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{base}assets/site.css">
-<script defer src="{base}assets/site.js"></script>
+<link rel="stylesheet" href="{base}assets/site.css?v={CSS_VERSION}">
+<script defer src="{base}assets/site.js?v={JS_VERSION}"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to main content</a>
-<header class="site-header"><div class="header-inner"><a class="wordmark" href="{base}" aria-label="Johnson Oliyide home">JO.</a><nav class="site-nav" aria-label="Main navigation">{nav}</nav></div></header>
+<header class="site-header"><div class="header-inner"><a class="wordmark" href="{base}" aria-label="Johnson Oliyide home">JO.</a><button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-navigation" aria-expanded="false" hidden><span data-menu-label>Menu</span><span class="menu-icon" aria-hidden="true"></span></button><nav class="site-nav" id="site-navigation" aria-label="Main navigation">{nav}</nav></div></header>
 {content}
 <footer class="site-footer"><div><div class="footer-name">Johnson Oliyide</div><a class="footer-email" href="mailto:{EMAIL}">{EMAIL}</a><div class="footer-social">{socials}</div></div><p class="disclaimer">The views expressed here are my own and do not represent the Federal Reserve Bank of Kansas City or the Federal Reserve System.</p></footer>
 </body></html>
@@ -52,7 +55,7 @@ def paper(item):
         links += f'<a href="../{escape(item["pdf"], quote=True)}" download aria-label="Download PDF: {escape(item["title"], quote=True)}">Download PDF <span aria-hidden="true">↓</span></a>'
     else:
         links += '<span class="pdf-pending">PDF file forthcoming</span>'
-    links += external('Publication ↗', item['url'])
+    links += external('Publication ↗', item['url'], 'publication-link')
     extras = []
     for extra in item.get('extras', []):
         extras.append(external(extra['label'], extra['url']))
@@ -73,7 +76,7 @@ def write(slug, title, content, description):
     folder.mkdir(parents=True, exist_ok=True)
     (folder / 'index.html').write_text(page(title, slug, content, description))
 
-home = '''<main id="main"><section class="hero"><div><h1>Johnson Ayobami<br>Oliyide</h1><p class="role">Research Associate<br><span>Federal Reserve Bank of Kansas City</span></p><div class="interests"><p class="eyebrow">Research interests</p><p>Macroeconomics<br>Monetary Economics<br>Finance</p></div><div class="actions"><a class="button" href="research/">View research <span aria-hidden="true">↗</span></a><a class="text-link" href="cv/">Curriculum vitae</a></div></div><figure class="portrait"><img src="assets/johnson-oliyide.jpg" alt="Johnson Oliyide" width="1280" height="1922" fetchpriority="high"></figure></section></main>
+home = '''<main id="main"><section class="hero"><div class="hero-copy"><h1>Johnson Ayobami<br>Oliyide</h1><p class="role">Research Associate<br><span>Federal Reserve Bank of Kansas City</span></p><div class="interests"><p class="eyebrow">Research interests</p><ul class="interest-list"><li>Macroeconomics</li><li>Monetary Economics</li><li>Finance</li></ul></div><div class="actions"><a class="button" href="research/">View research <span aria-hidden="true">↗</span></a><a class="text-link" href="cv/">Curriculum vitae</a></div></div><figure class="portrait"><img src="assets/johnson-oliyide.jpg" alt="Johnson Oliyide" width="1280" height="1922" fetchpriority="high"></figure></section></main>
 <section class="bio-band" aria-labelledby="background-label"><div class="bio-inner"><p id="background-label" class="eyebrow">Background</p><p>I hold an M.S. in Economics from the University of Maine and a B.Sc. in Economics from the Federal University of Agriculture, Abeokuta. My research experience began in 2020 and includes work at the University of Maine’s Market Integration Research Lab and the Kansas City Fed.</p></div></section>
 <section class="research-index" style="max-width:1100px;margin:auto" aria-labelledby="research-heading"><p class="eyebrow">Explore my work</p><h2 id="research-heading">Research</h2><article><div><h3>Policy Research</h3><p>Research on monetary policy and labor market conditions.</p></div><a class="text-link" href="research/#policy-research">View policy research <span aria-hidden="true">↗</span></a></article><article><div><h3>Academic Journal Publications</h3><p>Published work on financial markets spillover, energy, and economic development.</p></div><a class="text-link" href="research/#academic-publications">View publications <span aria-hidden="true">↗</span></a></article><article><div><h3>Work in Progress</h3><p>Ongoing research projects.</p></div><a class="text-link" href="research/#work-in-progress">View work in progress <span aria-hidden="true">↗</span></a></article></section>'''
 write('', 'About', home, 'Johnson Ayobami Oliyide is a Research Associate at the Federal Reserve Bank of Kansas City. Research in macroeconomics, monetary economics, and finance.')
