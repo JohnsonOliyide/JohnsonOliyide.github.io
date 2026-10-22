@@ -1,0 +1,120 @@
+[
+  {
+    "id": "natural-rates",
+    "category": "policy",
+    "year": 2026,
+    "title": "Introducing New Monthly Estimates of the Natural Rate of Interest and Natural Unemployment Rate",
+    "coauthors": "Andrew Glover",
+    "venue": "Economic Bulletin, Federal Reserve Bank of Kansas City, February 2, 2026",
+    "url": "https://www.kansascityfed.org/research/economic-bulletin/introducing-new-monthly-estimates-of-the-natural-rate-of-interest-and-natural-unemployment-rate/",
+    "abstract": "Policymakers reference the natural rate of interest (r*) to judge the tightness of monetary policy and the natural unemployment rate (u*) to gauge whether the economy is near full employment. Most estimates of these measures use quarterly data and are only updated four times per year. We introduce new monthly measures of r* and u*—the KC Fed Model-Based Natural Rate of Interest and Natural Unemployment Rate—to provide more timely data on the tightness of labor markets and stance of monetary policy.",
+    "pdf_url": "https://www.kansascityfed.org/documents/14393/EconomicBulletin26GloverOliyide0202.pdf",
+    "extras": [
+      {
+        "label": "Data product",
+        "url": "https://www.kansascityfed.org/data-and-trends/kansas-city-fed-model-based-natural-rate-of-interest-and-natural-unemployment-rate/"
+      },
+      {
+        "label": "Technical appendix",
+        "url": "https://www.kansascityfed.org/documents/14394/EconomicBulletin26GloverOliyide0202Appendix.pdf"
+      }
+    ],
+    "pdf": "papers/natural-rates.pdf"
+  },
+  {
+    "id": "lmci-october",
+    "category": "policy",
+    "year": 2025,
+    "title": "An Alternative Version of the KC Fed LMCI Suggests the Level of Activity Was Little Changed but Momentum Decelerated Sharply in October",
+    "coauthors": "José Mustre-del-Río and Emily Pollard",
+    "venue": "Economic Bulletin, Federal Reserve Bank of Kansas City, November 10, 2025",
+    "url": "https://www.kansascityfed.org/research/economic-bulletin/an-alternative-version-of-the-kc-fed-lmci-suggests-the-level-of-activity-was-little-changed-but-momentum-decelerated-sharply-in-october/",
+    "abstract": "Last month, we published an alternative version of the Kansas City Fed’s Labor Market Conditions Indicators (LMCI) that excludes delayed government series to continue tracking the health of the labor market in a systematic fashion. The October reading of this restricted LMCI suggests little change in the labor market, but a deceleration in labor market momentum caused by a high number of announced job cuts. This has pushed down our model's forecast of payroll employment growth for October.",
+    "pdf_url": "https://www.kansascityfed.org/documents/13081/EconomicBulletin25MustredelRioOliyidePollard1110.pdf",
+    "pdf": "papers/lmci-october.pdf"
+  },
+  {
+    "id": "lmci-september",
+    "category": "policy",
+    "year": 2025,
+    "title": "An Alternative Version of the KC Fed LMCI Suggests Little Change in the Labor Market in September",
+    "coauthors": "José Mustre-del-Río and Emily Pollard",
+    "venue": "Economic Bulletin, Federal Reserve Bank of Kansas City, October 10, 2025",
+    "url": "https://www.kansascityfed.org/research/economic-bulletin/an-alternative-version-of-the-kc-fed-lmci-suggests-little-change-in-the-labor-market-in-september/",
+    "abstract": "Delays in the release of official government data have increased the need for alternative measures of labor market health. We create an alternative version of the Kansas City Fed’s Labor Market Conditions Indicators (LMCI) that excludes delayed government series. The restricted LMCI still provide a timely measure of labor market health that can be used to create real-time forecasts of unemployment and payroll growth. Currently, the restricted LMCI suggest little change in the labor market from August to September.",
+    "pdf_url": "https://www.kansascityfed.org/documents/12273/EconomicBulletin25MustredelRioOliyidePollard1010.pdf",
+    "pdf": "papers/lmci-september.pdf"
+  },
+  {
+    "id": "private-lending-spreads",
+    "category": "policy",
+    "year": 2024,
+    "title": "Why Haven’t Recent Rate Increases Slowed the Economy More? Look to Unusually Low Private-Lending Spreads",
+    "coauthors": "Andrew Glover",
+    "venue": "Economic Bulletin, Federal Reserve Bank of Kansas City, August 14, 2024",
+    "url": "https://www.kansascityfed.org/documents/10409/EconomicBulletin24GloverOliyide0814.pdf",
+    "abstract": "Despite a large and rapid increase in the policy rate since March 2022, economic activity has remained resilient. We argue that private-lending spreads—the difference between the policy rate and rates private-sector borrowers pay—are surprisingly low and a major factor for why rate hikes have not slowed the economy more. If spreads are as insensitive to rate cuts as they are to rate hikes, then they may dampen the effect of expansionary monetary policy.",
+    "pdf_url": "https://www.kansascityfed.org/documents/10409/EconomicBulletin24GloverOliyide0814.pdf",
+    "pdf": "papers/private-lending-spreads.pdf"
+  },
+  {
+    "id": "volatility-connectedness",
+    "category": "academic",
+    "year": 2024,
+    "title": "Does high volatility increase connectedness? A study of Asian equity markets",
+    "coauthors": "T. F. P. Wiesen, O. B. Adekoya, and R. Afatsao",
+    "venue": "International Review of Financial Analysis, 96, 103735",
+    "url": "https://doi.org/10.1016/j.irfa.2024.103735",
+    "abstract": "Financial market integration metrics based upon variance decompositions from vector autoregression (VAR) models have become quite popular, and prior literature shows how these metrics change over time. However, only a few studies explain what is driving connectedness to change. Using stock market volatilities from eight Asian equity markets, we postulate that volatility may be a driving force behind increased connectedness. We use a two-step VAR estimation procedure to analyze the dynamics between equity market volatility and connectedness. The first step estimates the VAR model over rolling windows; this yields a sequence of connectedness-measuring spillover indices. The second step re-estimates the VAR with the spillover index sequence as an endogenous variable. Impulse response analysis from the two-step procedure confirms that volatility shocks increase connectedness. The two-step procedure indicates that volatility shocks from Singapore, Hong Kong, and China affect connectedness the most, whereas Malaysia affects it the least. China’s direct effect on the volatilities of the other markets is small. However, since China has a considerable impact on connectedness, China may have an important indirect effect on the other markets by increasing the speed and ease with which volatility spreads from market to market.",
+    "abstract_source": "https://ideas.repec.org/a/eee/finana/v96y2024ipbs1057521924006677.html",
+    "pdf": null
+  },
+  {
+    "id": "energy-financial-inclusion",
+    "category": "academic",
+    "year": 2024,
+    "title": "Energy efficiency, financial inclusion, and socio-economic outcomes: Evidence across advanced, emerging, and developing countries",
+    "coauthors": "O. J. Oyewole, M. A. S. Al-Faryan, and O. B. Adekoya",
+    "venue": "Energy, 289, 130062",
+    "url": "https://doi.org/10.1016/j.energy.2023.130062",
+    "abstract": "This study analyzes the effects of financial inclusion and energy efficiency on socio-economic performance across advanced, emerging, and developing economies. We view financial inclusion from the lens of access to and usage of financial services, while energy intensity represents energy efficiency. The panel quantile regression model is employed to capture the nonlinear impacts of financial inclusion and energy efficiency across the conditional distributions of the socio-economic indicators. We find that financial inclusion broadly improves the socio-economic markers, except employment in developing economies. Comparatively, the effect of access to financial services is stronger than the effect of the usage of financial services. On the other hand, the impact of energy efficiency is quite heterogeneous across the country groups and the socio-economic indicators, being sensitive to the level of economic development of the countries. Overall, energy efficiency has the strongest influence in advanced economies, but a moderate influence in the emerging and developing economies. Our results provide imperative policy reflections for the policymakers in the underlying countries, particularly on properly channeling financial resources and enhancing energy efficiency to benefit the various components of their economies.",
+    "abstract_source": "https://researchportal.hw.ac.uk/en/publications/energy-efficiency-financial-inclusion-and-socio-economic-outcomes/",
+    "pdf": null
+  },
+  {
+    "id": "china-technological-spillovers",
+    "category": "academic",
+    "year": 2023,
+    "title": "China’s technological spillover effect on the energy efficiency of the BRI countries",
+    "coauthors": "O. B. Adekoya, O. T. Kenku, and O. F. Ajayi",
+    "venue": "Energy Policy, 182, 113740",
+    "url": "https://doi.org/10.1016/j.enpol.2023.113740",
+    "abstract": "Given the rising technological progress and infrastructural developments among the Belt and Road Initiative (BRI) countries and the global move towards a reduction in the use of fossil fuels to mitigate climate change, this study aims to examine the role of technological innovation in the countries' energy efficiency to. We discover that energy intensity is increased by endogenous technological innovation in the BRI countries, especially at the middle and higher quantiles. We then remove China from the panel in order to check if the country's high technological advancement and energy efficiency might have an outlying influence on the relationship. Except for a relative decline in the significant estimates across the quantiles, the direction of effect largely remains. Finally, China's technological innovation has a reducing spillover effect on the energy intensity of the BRI countries. These findings indicate that, while endogenous technological innovations are detrimental to the energy efficiency of the BRI countries, China's technologies are energy efficient for the other BRI countries, and should be adopted or absorbed to reduce dependence on fossil fuels.",
+    "abstract_source": "https://ideas.repec.org/a/eee/enepol/v182y2023ics0301421523003257.html",
+    "pdf": null
+  },
+  {
+    "id": "resource-rents-institutions",
+    "category": "academic",
+    "year": 2022,
+    "title": "How critical are resource rents, agriculture, growth, and renewable energy to environmental degradation in the resource-rich African countries? The role of institutional quality",
+    "coauthors": "O. B. Adekoya, G. E. Ajayi, and M. Suhrab",
+    "venue": "Energy Policy, 164, 112888",
+    "url": "https://doi.org/10.1016/j.enpol.2022.112888",
+    "abstract": "Although the literature is being increasingly flooded with studies on the determinants of environmental degradation, the peculiarities of some countries in some regions have been substantially overlooked. Yet, these unique peculiarities either instigate or hinder some factors which matter for environmental quality. This study therefore puts the resource richness of African countries into consideration in the examination of the impacts of resources rents, agriculture, growth, and renewable energy consumption on environmental degradation. Additionally, the influence of institutional quality is uniquely examined in the nexus. The baseline model reveals that environmental degradation is respectively reduced and worsened by renewable energy consumption and growth in both the short- and the long-run. The impacts of agriculture and resources rents vary across the periods, although they both raise the level of environmental degradation. Considering the moderating role of institutional quality, its influence is stronger in the long-run. It reverses the favourable influence of renewable energy, but strengthens the adverse impact of growth. Also, it aids the ability of agriculture and resources rents to reduce degradation. Finally, the threshold results show that the impacts of the indicators on environmental degradation are sensitive to institutional quality levels. Improved institutional quality only changes the size of the impacts of renewable energy use and growth. However, contrary to poor institutional quality, an improved institution results in the ability of agriculture to reduce degradation and militates against the adverse impact of resources rents.",
+    "abstract_source": "https://ideas.repec.org/a/eee/enepol/v164y2022ics0301421522001136.html",
+    "pdf": null
+  },
+  {
+    "id": "covid-connectedness",
+    "category": "academic",
+    "year": 2021,
+    "title": "How COVID-19 drives connectedness among commodity and financial markets: Evidence from TVP-VAR and causality-in-quantiles techniques",
+    "coauthors": "O. B. Adekoya",
+    "venue": "Resources Policy, 70, 101898",
+    "url": "https://doi.org/10.1016/j.resourpol.2020.101898",
+    "abstract": "With many commodity and financial markets reportedly experiencing poor performances during this COVID-19 pandemic, this study intends to examine the effect of the pandemic on the connectedness among the markets. There are several reasons that suggest that apart from the pandemic affecting the performances of the markets, it can also be a driver of their connectedness, coming from the perspective of the global financial cycle channel. Therefore, we first employ the recently developed time-varying parameter vector autoregressions (TVP-VAR) technique to examine the volatility spillover among the commodity and financial assets. We find evidence of strong volatility across the markets, with gold and USD being net receivers of shocks, and others, net transmitters. With this evidence, we proceed to the evaluation of the influence of the COVID-19 pandemic on the connectedness across the markets using both the linear and non-linear (causality-in-quantiles) causality tests. The causality-in-quantiles test outperforms the linear Granger-causality test, and the results show significant causal impacts of the two measures of COVID-19 pandemic (infectious diseases-based equity market volatility and the growth rate of the U.S. COVID-19 reported cases) on the connectedness across the markets, especially at the lower and middle-level quantiles. Overall, these findings prove that the pandemic has been largely responsible for risks transmission across various commodity and financial markets. This is because it has significantly raised investors’ and policy uncertainties and immensely altered global financial cycle which in turn results in global flows of capital, and movements in the prices of assets across different financial markets.",
+    "abstract_source": "https://ideas.repec.org/a/eee/jrpoli/v70y2021ics0301420720309296.html",
+    "pdf": null
+  }
+]
