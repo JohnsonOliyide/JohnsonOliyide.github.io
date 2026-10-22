@@ -19,7 +19,13 @@
         "url": "https://www.kansascityfed.org/documents/14394/EconomicBulletin26GloverOliyide0202Appendix.pdf"
       }
     ],
-    "pdf": "papers/natural-rates.pdf"
+    "pdf": "papers/natural-rates.pdf",
+    "media_coverage": [
+      {
+        "label": "Reuters",
+        "url": "https://www.reuters.com/commentary/reuters-open-interest/unemployment-rate-remains-feds-labor-market-lodestar-2026-08-10/"
+      }
+    ]
   },
   {
     "id": "lmci-october",
@@ -55,7 +61,17 @@
     "url": "https://www.kansascityfed.org/documents/10409/EconomicBulletin24GloverOliyide0814.pdf",
     "abstract": "Despite a large and rapid increase in the policy rate since March 2022, economic activity has remained resilient. We argue that private-lending spreads—the difference between the policy rate and rates private-sector borrowers pay—are surprisingly low and a major factor for why rate hikes have not slowed the economy more. If spreads are as insensitive to rate cuts as they are to rate hikes, then they may dampen the effect of expansionary monetary policy.",
     "pdf_url": "https://www.kansascityfed.org/documents/10409/EconomicBulletin24GloverOliyide0814.pdf",
-    "pdf": "papers/private-lending-spreads.pdf"
+    "pdf": "papers/private-lending-spreads.pdf",
+    "media_coverage": [
+      {
+        "label": "The Economist",
+        "url": "https://www.economist.com/finance-and-economics/2024/09/11/strangely-americas-companies-will-soon-face-higher-interest-rates"
+      },
+      {
+        "label": "Central Banking",
+        "url": "https://www.centralbanking.com/central-banks/monetary-policy/7962128/lending-spreads-may-dampen-monetary-policy-research"
+      }
+    ]
   },
   {
     "id": "volatility-connectedness",

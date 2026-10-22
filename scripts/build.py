@@ -56,6 +56,8 @@ def paper(item):
     extras = []
     for extra in item.get('extras', []):
         extras.append(external(extra['label'], extra['url']))
+    media = [external(coverage['label'], coverage['url'])
+             for coverage in item.get('media_coverage', [])]
     return f'''<article class="paper" id="{item['id']}"><div class="paper-year">{item['year']}</div><div>
 <h3><a href="{escape(item['url'], quote=True)}" target="_blank" rel="noopener noreferrer">{escape(item['title'])}</a></h3>
 <p class="paper-authors">With {escape(item['coauthors'])}</p>
@@ -63,6 +65,7 @@ def paper(item):
 <div class="paper-actions"><button class="abstract-toggle" type="button" data-abstract aria-expanded="false" aria-controls="abstract-{item['id']}" hidden>Abstract <span data-sign aria-hidden="true">+</span><span class="sr-only"> for {escape(item['title'])}</span></button>{links}</div>
 <div class="paper-abstract" id="abstract-{item['id']}" role="region" aria-label="Abstract: {escape(item['title'], quote=True)}"><p>{escape(item['abstract'])}</p></div>
 {('<p class="paper-extras">' + ' · '.join(extras) + '</p>') if extras else ''}
+{('<p class="paper-extras">Media Coverage: ' + ' · '.join(media) + '</p>') if media else ''}
 </div></article>'''
 
 def write(slug, title, content, description):
@@ -72,7 +75,7 @@ def write(slug, title, content, description):
 
 home = '''<main id="main"><section class="hero"><div><h1>Johnson Ayobami<br>Oliyide</h1><p class="role">Research Associate<br><span>Federal Reserve Bank of Kansas City</span></p><div class="interests"><p class="eyebrow">Research interests</p><p>Macroeconomics<br>Monetary Economics<br>Finance</p></div><div class="actions"><a class="button" href="research/">View research <span aria-hidden="true">↗</span></a><a class="text-link" href="cv/">Curriculum vitae</a></div></div><figure class="portrait"><img src="assets/johnson-oliyide.jpg" alt="Johnson Oliyide" width="1280" height="1922" fetchpriority="high"></figure></section></main>
 <section class="bio-band" aria-labelledby="background-label"><div class="bio-inner"><p id="background-label" class="eyebrow">Background</p><p>I hold an M.S. in Economics from the University of Maine and a B.Sc. in Economics from the Federal University of Agriculture, Abeokuta. My research experience began in 2020 and includes work at the University of Maine’s Market Integration Research Lab and the Kansas City Fed.</p></div></section>
-<section class="research-index" style="max-width:1100px;margin:auto" aria-labelledby="research-heading"><p class="eyebrow">Explore my work</p><h2 id="research-heading">Research</h2><article><div><h3>Policy Research</h3><p>Research on monetary policy and labor market conditions.</p></div><a class="text-link" href="research/#policy-research">View policy research <span aria-hidden="true">↗</span></a></article><article><div><h3>Academic Journal Publications</h3><p>Published work on financial markets, energy, and economic development.</p></div><a class="text-link" href="research/#academic-publications">View publications <span aria-hidden="true">↗</span></a></article><article><div><h3>Work in Progress</h3><p>Ongoing research projects.</p></div><a class="text-link" href="research/#work-in-progress">View work in progress <span aria-hidden="true">↗</span></a></article></section>'''
+<section class="research-index" style="max-width:1100px;margin:auto" aria-labelledby="research-heading"><p class="eyebrow">Explore my work</p><h2 id="research-heading">Research</h2><article><div><h3>Policy Research</h3><p>Research on monetary policy and labor market conditions.</p></div><a class="text-link" href="research/#policy-research">View policy research <span aria-hidden="true">↗</span></a></article><article><div><h3>Academic Journal Publications</h3><p>Published work on financial markets spillover, energy, and economic development.</p></div><a class="text-link" href="research/#academic-publications">View publications <span aria-hidden="true">↗</span></a></article><article><div><h3>Work in Progress</h3><p>Ongoing research projects.</p></div><a class="text-link" href="research/#work-in-progress">View work in progress <span aria-hidden="true">↗</span></a></article></section>'''
 write('', 'About', home, 'Johnson Ayobami Oliyide is a Research Associate at the Federal Reserve Bank of Kansas City. Research in macroeconomics, monetary economics, and finance.')
 
 policy = ''.join(paper(p) for p in PAPERS if p['category'] == 'policy')
