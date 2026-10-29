@@ -24,7 +24,7 @@ if (navToggle && siteNav) {
   mobileMenu.addEventListener('change', () => setMenuOpen(false));
 }
 
-document.querySelectorAll('[data-abstract]').forEach(button => {
+document.querySelectorAll('[data-abstract], [data-pdf-placeholder]').forEach(button => {
   const panel = document.getElementById(button.getAttribute('aria-controls'));
   if (!panel) return;
   panel.hidden = true;

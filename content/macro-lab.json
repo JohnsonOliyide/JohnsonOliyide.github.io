@@ -1,0 +1,34 @@
+[
+  {
+    "id": "r-packages",
+    "kind": "R package",
+    "title": "JointShocks",
+    "description": "An R package for joint and generalized spillover analysis using vector autoregressions.",
+    "url": null,
+    "link_label": "View package"
+  },
+  {
+    "id": "labor-market-tightness",
+    "kind": "U.S. labor markets",
+    "title": "U.S. Labor Market Tightness Dashboard",
+    "description": "Measures U.S. labor market tightness using the unemployment gap (u − u*). It presents three views: a 68% credible-set view, a gap standardized by its sample standard deviation, and a gap scaled by an approximate standard error of the Kansas City Fed u* estimate.",
+    "url": "https://johnsonoliyide.github.io/labor-market-dashboard/",
+    "link_label": "Open dashboard"
+  },
+  {
+    "id": "employment-dynamics",
+    "kind": "U.S. payroll employment",
+    "title": "U.S. Employment Dynamics Dashboard",
+    "description": "Tracks payroll employment across major U.S. industries and states using BLS Current Employment Statistics data. The industry view shows employment changes, sector contributions, and shares of total payroll employment; the state map compares month-over-month growth, year-over-year growth, and states’ shares of U.S. employment.",
+    "url": "https://johnsonoliyide.github.io/employment_dynamics_dashboard/",
+    "link_label": "Open dashboard"
+  },
+  {
+    "id": "monetary-policy-gap",
+    "kind": "U.S. monetary policy",
+    "title": "Monetary Policy Gap Tracker",
+    "description": "Compares the real policy rate with alternative estimates of r* to assess whether U.S. monetary policy appears restrictive, neutral, or accommodative. Users can select the policy rate, inflation-expectations measure, natural-rate estimates, and date range, and compare current readings with historical policy gaps.",
+    "url": "https://johnsonoliyide.github.io/monetary_policy_gap_tracker/",
+    "link_label": "Open dashboard"
+  }
+]

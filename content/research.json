@@ -132,5 +132,32 @@
     "abstract": "With many commodity and financial markets reportedly experiencing poor performances during this COVID-19 pandemic, this study intends to examine the effect of the pandemic on the connectedness among the markets. There are several reasons that suggest that apart from the pandemic affecting the performances of the markets, it can also be a driver of their connectedness, coming from the perspective of the global financial cycle channel. Therefore, we first employ the recently developed time-varying parameter vector autoregressions (TVP-VAR) technique to examine the volatility spillover among the commodity and financial assets. We find evidence of strong volatility across the markets, with gold and USD being net receivers of shocks, and others, net transmitters. With this evidence, we proceed to the evaluation of the influence of the COVID-19 pandemic on the connectedness across the markets using both the linear and non-linear (causality-in-quantiles) causality tests. The causality-in-quantiles test outperforms the linear Granger-causality test, and the results show significant causal impacts of the two measures of COVID-19 pandemic (infectious diseases-based equity market volatility and the growth rate of the U.S. COVID-19 reported cases) on the connectedness across the markets, especially at the lower and middle-level quantiles. Overall, these findings prove that the pandemic has been largely responsible for risks transmission across various commodity and financial markets. This is because it has significantly raised investors’ and policy uncertainties and immensely altered global financial cycle which in turn results in global flows of capital, and movements in the prices of assets across different financial markets.",
     "abstract_source": "https://ideas.repec.org/a/eee/jrpoli/v70y2021ics0301420720309296.html",
     "pdf": null
+  },
+  {
+    "id": "tracking-neutral-stars",
+    "category": "wip",
+    "year": 2026,
+    "title": "Tracking the Neutral Stars at Higher Frequency",
+    "coauthors": "",
+    "abstract": null,
+    "pdf": null
+  },
+  {
+    "id": "neutral-rate-monetary-policy",
+    "category": "wip",
+    "year": 2026,
+    "title": "The Neutral Rate Depends on Monetary Policy",
+    "coauthors": "Andrew Glover",
+    "abstract": null,
+    "pdf": null
+  },
+  {
+    "id": "urban-influence",
+    "category": "wip",
+    "year": 2026,
+    "title": "Urban Influence of United States Largest Metro Areas on US Counties",
+    "coauthors": "T. Wiesen, T. Gabe, R. Afatsao, and O. B. Adekoya",
+    "abstract": null,
+    "pdf": null
   }
 ]
