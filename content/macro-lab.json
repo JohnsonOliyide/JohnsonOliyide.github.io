@@ -1,13 +1,5 @@
 [
   {
-    "id": "r-packages",
-    "kind": "R package",
-    "title": "JointShocks",
-    "description": "An R package for joint and generalized spillover analysis using vector autoregressions.",
-    "url": null,
-    "link_label": "View package"
-  },
-  {
     "id": "labor-market-tightness",
     "kind": "U.S. labor markets",
     "title": "U.S. Labor Market Tightness Dashboard",

@@ -19,7 +19,9 @@ SOCIAL = [
     ('X', 'https://twitter.com/JohnsonOliyide'),
 ]
 NAV = [('About', ''), ('Pre-PhD Research', 'research'), ('CV', 'cv'),
-       ('Macro Lab', 'macro-lab'), ('Contact', 'contact')]
+       ('Macro Lab', 'macro-lab'),
+       ('JointShocks Tutorial', 'https://johnsonoliyide.github.io/JointShocks/'),
+       ('Contact', 'contact')]
 
 def external(label, url, css=''):
     return f'<a class="{css}" href="{escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(label)}</a>'
@@ -27,7 +29,7 @@ def external(label, url, css=''):
 def page(title, slug, content, description):
     base = '../' if slug else './'
     nav = ''.join(
-        f'<a href="{base}{path + "/" if path else ""}"'
+        f'<a href="{path if path.startswith("https://") else base + (path + "/" if path else "")}"'
         + (' aria-current="page"' if path == slug else '')
         + f'>{label}</a>' for label, path in NAV)
     socials = ''.join(external(label, url) for label, url in SOCIAL)
@@ -106,12 +108,12 @@ write('research', 'Pre-PhD Research', research, 'Pre-PhD research by Johnson Oli
 cv = '''<main id="main" class="page"><h1>Curriculum vitae</h1><button class="print-button" type="button" data-print hidden>Print / Save as PDF</button><section class="cv-section"><h2>Research experience</h2><div class="cv-row"><div class="cv-date">June 2024–present</div><div><h3>Research Associate</h3><p>Economic Research Department<br>Federal Reserve Bank of Kansas City</p></div></div><div class="cv-row"><div class="cv-date">August 2022–May 2024</div><div><h3>Graduate Research Assistant</h3><p>Market Integration Research Lab, University of Maine<br>Professors Thomas Wiesen and Todd Gabe</p></div></div><div class="cv-row"><div class="cv-date">June 2020–August 2022</div><div><h3>Research Assistant</h3><p>Professor Ismail Fasanya<br>School of Economics and Finance, University of the Witwatersrand</p></div></div></section><section class="cv-section"><h2>Professional experience</h2><div class="cv-row"><div class="cv-date">July 2021–April 2022</div><div><h3>Economic Analyst</h3><p>Economic Development and Investment Desk<br>Development Agenda for Western Nigeria Commission</p></div></div></section><section class="cv-section"><h2>Education</h2><div class="cv-row"><div class="cv-date">2022–2024</div><div><h3>M.S. in Economics</h3><p>University of Maine, United States</p></div></div><div class="cv-row"><div class="cv-date">2015–2021</div><div><h3>B.Sc. in Economics</h3><p>Federal University of Agriculture, Abeokuta, Nigeria</p></div></div></section><section class="cv-section"><h2>Publications and policy research</h2><p><a href="../research/">View the complete research list, abstracts, and available PDFs.</a></p></section></main>'''
 write('cv', 'CV', cv, 'Education and research experience of Johnson Ayobami Oliyide.')
 
-lab = f'''<main id="main" class="page"><h1>Macro Lab</h1><p class="page-intro">An R package for spillover analysis and three interactive dashboards for exploring U.S. labor markets and monetary policy. The dashboards use publicly available data.</p>{''.join(tool(item) for item in TOOLS)}</main>'''
-write('macro-lab', 'Macro Lab', lab, 'JointShocks R package and three interactive dashboards for U.S. labor markets, payroll employment, and monetary policy.')
+lab = f'''<main id="main" class="page"><h1>Macro Lab</h1><p class="page-intro">Three interactive dashboards for exploring U.S. labor markets and monetary policy. The dashboards use publicly available data.</p>{''.join(tool(item) for item in TOOLS)}</main>'''
+write('macro-lab', 'Macro Lab', lab, 'Three interactive dashboards for U.S. labor markets, payroll employment, and monetary policy.')
 contact = f'''<main id="main" class="page"><p class="eyebrow">Get in touch</p><h1>Contact</h1><p>I welcome conversations about economics and research.</p><p class="email-address"><a href="mailto:{EMAIL}">{EMAIL}</a></p><p class="page-intro">Research Associate<br>Federal Reserve Bank of Kansas City<br>Kansas City, Missouri</p><div class="contact-links">{''.join(external(label + ' ↗', url) for label, url in SOCIAL)}</div></main>'''
 write('contact', 'Contact', contact, 'Contact Johnson Ayobami Oliyide.')
 
-for old, target in [('resume', '../cv/'), ('home', '../'), ('about', '../'), ('r-packages', '../macro-lab/#r-packages')]:
+for old, target in [('resume', '../cv/'), ('home', '../'), ('about', '../'), ('r-packages', 'https://johnsonoliyide.github.io/JointShocks/')]:
     path = ROOT / old
     path.mkdir(exist_ok=True)
     (path / 'index.html').write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={target}"><title>Johnson Oliyide</title></head><body><a href="{target}">Continue to Johnson Oliyide’s website</a></body></html>')
