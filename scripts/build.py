@@ -20,8 +20,7 @@ SOCIAL = [
 ]
 NAV = [('About', ''), ('Pre-PhD Research', 'research'), ('CV', 'cv'),
        ('Macro Lab', 'macro-lab'),
-       ('JointShocks Tutorial', 'https://johnsonoliyide.github.io/JointShocks/'),
-       ('Contact', 'contact')]
+       ('JointShocks Tutorial', 'https://johnsonoliyide.github.io/JointShocks/')]
 
 def external(label, url, css=''):
     return f'<a class="{css}" href="{escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{escape(label)}</a>'
@@ -110,10 +109,8 @@ write('cv', 'CV', cv, 'Education and research experience of Johnson Ayobami Oliy
 
 lab = f'''<main id="main" class="page"><h1>Macro Lab</h1><p class="page-intro">Three interactive dashboards for exploring U.S. labor markets and monetary policy. The dashboards use publicly available data.</p>{''.join(tool(item) for item in TOOLS)}</main>'''
 write('macro-lab', 'Macro Lab', lab, 'Three interactive dashboards for U.S. labor markets, payroll employment, and monetary policy.')
-contact = f'''<main id="main" class="page"><p class="eyebrow">Get in touch</p><h1>Contact</h1><p>I welcome conversations about economics and research.</p><p class="email-address"><a href="mailto:{EMAIL}">{EMAIL}</a></p><p class="page-intro">Research Associate<br>Federal Reserve Bank of Kansas City<br>Kansas City, Missouri</p><div class="contact-links">{''.join(external(label + ' ↗', url) for label, url in SOCIAL)}</div></main>'''
-write('contact', 'Contact', contact, 'Contact Johnson Ayobami Oliyide.')
 
-for old, target in [('resume', '../cv/'), ('home', '../'), ('about', '../'), ('r-packages', 'https://johnsonoliyide.github.io/JointShocks/')]:
+for old, target in [('contact', '../'), ('resume', '../cv/'), ('home', '../'), ('about', '../'), ('r-packages', 'https://johnsonoliyide.github.io/JointShocks/')]:
     path = ROOT / old
     path.mkdir(exist_ok=True)
     (path / 'index.html').write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={target}"><title>Johnson Oliyide</title></head><body><a href="{target}">Continue to Johnson Oliyide’s website</a></body></html>')
@@ -128,4 +125,4 @@ for name in ['index.html', '404.html', '.nojekyll', 'assets', 'papers', 'researc
         shutil.copytree(source, target, dirs_exist_ok=True)
     else:
         shutil.copy2(source, target)
-print(f'Built five pages and migrated {len(PAPERS)} research entries.')
+print(f'Built four pages and migrated {len(PAPERS)} research entries.')
